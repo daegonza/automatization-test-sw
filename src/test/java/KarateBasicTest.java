@@ -6,7 +6,6 @@ class KarateBasicTest {
     }
     @Karate.Test
     Karate testBasic() {
-        return Karate.run().relativeTo(getClass()).tags("~@ignore");
+        return Karate.run().path("src/test/java/features").tags("~@ignore");
     }
-
 }
